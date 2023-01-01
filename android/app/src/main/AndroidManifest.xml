@@ -1,4 +1,5 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jurgengeitner.magic_8_ball">
    <application
         android:label="magic_8_ball"
         android:name="${applicationName}"
