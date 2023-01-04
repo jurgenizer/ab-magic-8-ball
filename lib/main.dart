@@ -32,7 +32,12 @@ class Ball extends StatefulWidget {
 class _BallState extends State<Ball> {
   Widget build(BuildContext context) {
     return Center(
-      child: Image.asset('images/ball1.png'),
+      child: TextButton(
+        onPressed: () {
+          debugPrint('I got clicked');
+        },
+        child: Image.asset('images/ball1.png'),
+      ),
     );
   }
 }
