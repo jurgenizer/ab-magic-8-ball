@@ -32,24 +32,23 @@ class Ball extends StatefulWidget {
 
 class _BallState extends State<Ball> {
   int ballNumber = 1;
-/*
+
   void generateRandomNumber() {
     setState(() {
-      ballNumber = Random().nextInt(5);
+      ballNumber = Random().nextInt(4) + 1;
     });
   }
-*/
 
+  @override
   Widget build(BuildContext context) {
     return Center(
       child: TextButton(
         onPressed: () {
-          ballNumber = Random().nextInt(5);
+          generateRandomNumber();
           debugPrint('The ball number is: $ballNumber');
         },
-        child: Image.asset('images/ball1.png'),
+        child: Image.asset('images/ball$ballNumber.png'),
       ),
     );
   }
 }
-/////
